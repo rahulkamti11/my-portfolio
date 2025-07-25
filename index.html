@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Kamti Portfolio</title>
+  <link rel="icon" href="logo.jpg" type="image/jpg">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-logo">
+      <img src="logo.jpg" alt="Logo" class="logo" />
+      <span class="brand-name">Rahul Kamti</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero section">
+    <div class="hero-content">
+      <img src="image.jpg" alt="Rahul Kamti" class="hero-image" />
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Rahul Kamti</span></h1>
+        <h2>I am into, <span class="changing-text"></span></h2>
+        <br><br>
+        <h2>About Me</h2>
+        <p>I am a 3rd year engineering student at SSIPMT, Raipur.</p>
+        <p>I am currently pursuing a B.Tech degree in CSE</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, Express, Node.js</p>
+      </div>
+      <div class="skill-card">
+        <h3>DBMS</h3>
+        <p>MongoDB, MySQL</p>
+      </div>
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <p>C, C++, Java, Python, JavaScript</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Random Jokes</h3>
+        <p>Random jokes using api</p><br>
+        <a href=" https://rahulkamti11.github.io/jokesapi/" target="_blank" class="btn">View</a>
+      </div>
+      <div class="project-card">
+        <h3>Game</h3>
+        <p>Rock Paper Scissor Game</p><br>
+        <a href="https://rahulkamti11.github.io/rockpaperscissor/" target="_blank" class="btn">View</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <h2 class="section-title">Resume</h2>
+    <div class="resume-card">
+      <h3>Rahul Kamti</h3>
+      <p>Student at SSIPMT, Raipur</p>
+      <p>B.Tech CSE</p>
+      <div class="resume-buttons">
+        <a href="resume.pdf" target="_blank" class="btn">View</a>
+        <a href="resume.pdf" target="_blank" download class="btn">Download</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect Section -->
+  <section id="connect" class="section">
+    <h2 class="section-title">Connect With Me</h2>
+    <div class="socials">
+      <p><strong>My Socials:</strong> 
+        <a href="https://www.linkedin.com/in/rahulkamti" target="_blank">LinkedIn</a> 
+        <a href="#" target="_blank">Twitter</a> 
+        <a href="#" target="_blank">Instagram</a>
+      </p>
+      <p><strong>Coding:</strong> 
+        <a href="https://www.codechef.com/users/rahul_kamti" target="_blank">CodeChef</a> 
+        <a href="https://github.com/rahulkamti11" target="_blank">GitHub</a>
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <h3 style="text-align: center;">Contact Me</h3>
+      <br>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Your Phone (optional)" />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <div class="contact-buttons">
+          <button type="button" class="btn">
+            <a href="mailto:kamti03rahul@gmail.com" style="color:white; text-decoration:none;">My Email</a>
+          </button>
+          <button type="submit" id="submit" class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rahul Kamti. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

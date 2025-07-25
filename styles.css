@@ -1,0 +1,304 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: #84b7e1;
+  color: #000;
+}
+
+/* Section spacing */
+.section {
+  padding-block: 80px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #021b3d;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 40px;
+}
+
+.hero-image {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.highlight {
+  color: #00ccff
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.changing-text {
+  color: #00ccff;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Skills Section */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.skill-card {
+  color: white;
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 1.1rem;
+}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.project-card {
+  color: white;
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover {
+  background: #011d51;
+  transform: translateY(-8px)
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  margin: 10px 0;
+}
+
+/* Resume Section */
+.resume-card {
+  color: white;
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.35s ease;
+}
+
+.resume-card:hover {
+  background: #011d51;
+  transform: translateY(-8px)
+}
+
+.resume-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: #005fa3;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #003f6b;
+}
+
+/* Connect Section */
+.socials {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.socials a {
+  margin: 0 8px;
+  color: #005fa3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-card {
+  color: white;
+  background-color: #003366;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #021b3d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .hero-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .resume-card,
+  .project-card,
+  .skill-card {
+    width: 90%;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
