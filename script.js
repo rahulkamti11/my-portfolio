@@ -28,7 +28,38 @@ function typeEffect() {
 }
 typeEffect();
 
-const submit = document.querySelector("#submit")
-submit.addEventListener("click",()=>{
-  alert("Submitted");
-})
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    message: form.message.value
+  };
+
+  try {
+    const res = await fetch('https://portfolio-backend-ua7x.onrender.com/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
+      alert("✅ Message sent successfully!");
+      form.reset();
+    } else {
+      alert("❌ Failed to send message.");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("❌ Server error. Try again later.");
+  }
+});
+
