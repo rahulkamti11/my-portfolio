@@ -107,15 +107,12 @@
     <div class="contact-card">
       <h3 style="text-align: center;">Contact Me</h3>
       <br>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="tel" placeholder="Your Phone (optional)" />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Your Phone (optional)" />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <div class="contact-buttons">
-          <button type="button" class="btn">
-            <a href="mailto:kamti03rahul@gmail.com" style="color:white; text-decoration:none;">My Email</a>
-          </button>
           <button type="submit" id="submit" class="btn">Submit</button>
         </div>
       </form>
