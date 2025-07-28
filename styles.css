@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #84b7e1;
+  background-color: #a6d1f4;
   color: #000;
 }
 
@@ -71,6 +71,7 @@ nav {
 }
 
 /* Hero Section */
+
 .hero {
   min-height: 100vh;
   background-color: #003366;
@@ -194,7 +195,9 @@ nav {
   background: #011d51;
   transform: translateY(-8px)
 }
-
+#view,#down{
+  width:45%;
+}
 .resume-buttons {
   margin-top: 15px;
   display: flex;
@@ -220,6 +223,7 @@ nav {
   text-align: center;
   font-size: 1.1rem;
   margin-bottom: 30px;
+  
 }
 
 .socials a {
@@ -252,7 +256,9 @@ nav {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
-
+#submit{
+  width:100%;
+}
 .contact-buttons {
   display: flex;
   justify-content: space-between;
@@ -264,7 +270,14 @@ nav {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  font-size: 14px;
+  line-height: 1.6;
+  width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-x: hidden;
 }
+
 
 /* Responsive Styling */
 @media (max-width: 768px) {
