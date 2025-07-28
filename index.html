@@ -69,8 +69,13 @@
       </div>
       <div class="project-card">
         <h3>Game</h3>
-        <p>Rock Paper Scissor Game</p><br>
-        <a href="https://rahulkamti11.github.io/rockpaperscissor/" target="_blank" class="btn">View</a>
+        <p>Rock Paper Scissor Game</p>
+        <p style="color:grey"><br>coming soon...</p>
+        <!-- <a href="https://rahulkamti11.github.io/rockpaperscissor/" target="_blank" class="btn">View</a> -->
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3><br><br>
+        <h1 style="color:grey">coming soon...</h1>       
       </div>
     </div>
   </section>
@@ -107,11 +112,14 @@
     <div class="contact-card">
       <h3 style="text-align: center;">Contact Me</h3>
       <br>
-      <form id="contactForm">
+      <form id="contactForm" action="https://formsubmit.co/kamti03rahul@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <input type="tel" name="phone" placeholder="Your Phone (optional)" />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thanks for contacting me! I’ll get back to you soon.">
+        <input type="hidden" name="_next" value="https://rahulkamti11.github.io/my-portfolio/submitted.html">
         <div class="contact-buttons">
           <button type="submit" id="submit" class="btn">Submit</button>
         </div>
@@ -121,7 +129,7 @@
 
   <footer class="footer">
     <p>&copy; 2025 Rahul Kamti. All rights reserved.</p>
-    <p>Email: kamti03rahul@gmail.com</p>
+    <p>email:<a href="mailto:kamti03rahul@gmail.com"> kamti03rahul@gmail.com</a></p>
   </footer>
 
   <script src="script.js"></script>
